@@ -130,7 +130,7 @@ export default function SignupForm() {
           onBlur={handleEmailBlur}
           className={`form-input block py-2 px-3 border ${
             emailError ? "border-red-500" : "border-gray-300"
-          } rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`}
+          } form-input block py-2 px-3 border border-gray-300 rounded-md shadow-sm transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-blue-300 focus:ring focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none w-full`}
         />
         {emailFieldTouched && emailError && (
           <div className="text-red-600 text-xs mt-2">{emailError}</div>
@@ -157,7 +157,7 @@ export default function SignupForm() {
             onBlur={handleRepeatEmailBlur}
             className={`form-input block py-2 px-3 border ${
               emailError ? "border-red-500" : "border-gray-300"
-            } rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`}
+            } form-input block py-2 px-3 border border-gray-300 rounded-md shadow-sm transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-blue-300 focus:ring focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none w-full`}
           />
           {emailFieldTouched && repeatEmailError && (
             <div className="text-red-600 text-xs mt-2">{repeatEmailError}</div>
@@ -185,7 +185,7 @@ export default function SignupForm() {
             autoComplete="new-password"
             className={`form-input block py-2 px-3 border ${
               passwordError ? "border-red-500" : "border-gray-300"
-            } rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`}
+            } form-input block py-2 px-3 border border-gray-300 rounded-md shadow-sm transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-blue-300 focus:ring focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none w-full`}
           />
           {passwordError && (
             <div className="text-red-600 text-xs mt-2">{passwordError}</div>
@@ -240,7 +240,7 @@ export default function SignupForm() {
       <div className="mt-6">
         <button
           type="submit"
-          className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+          className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500  focus:shadow-outline-indigo active:bg-indigo-800 transition duration-150 ease-in-out focus:border-indigo-700 focus:ring focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none"
         >
           Criar conta
         </button>
