@@ -130,10 +130,10 @@ export default function SignupForm() {
           } rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`}
         />
         {emailFieldTouched && emailError && (
-          <div className="text-red-600 mt-2">{emailError}</div>
+          <div className="text-red-600 text-xs mt-2">{emailError}</div>
         )}
         {!emailFieldTouched && emailError && (
-          <div className="text-red-600 mt-2">{emailError}</div>
+          <div className="text-red-600 text-xs mt-2">{emailError}</div>
         )}
       </div>
       <div className="mt-6">
@@ -157,10 +157,10 @@ export default function SignupForm() {
             } rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`}
           />
           {emailFieldTouched && repeatEmailError && (
-            <div className="text-red-600 mt-2">{repeatEmailError}</div>
+            <div className="text-red-600 text-xs mt-2">{repeatEmailError}</div>
           )}
           {!emailFieldTouched && repeatEmailError && (
-            <div className="text-red-600 mt-2">{repeatEmailError}</div>
+            <div className="text-red-600 text-xs mt-2">{repeatEmailError}</div>
           )}
         </div>
       </div>
@@ -185,7 +185,7 @@ export default function SignupForm() {
             } rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5 w-full`}
           />
           {passwordError && (
-            <div className="text-red-600 mt-2">{passwordError}</div>
+            <div className="text-red-600 text-xs mt-2">{passwordError}</div>
           )}
         </div>
       </div>
@@ -231,7 +231,7 @@ export default function SignupForm() {
           </div>
         </label>
         {agreedToTermsError && (
-          <div className="text-red-600 mt-2">{agreedToTermsError}</div>
+          <div className="text-red-600 text-xs mt-2">{agreedToTermsError}</div>
         )}
       </div>
       <div className="mt-6">
