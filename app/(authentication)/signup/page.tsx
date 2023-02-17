@@ -3,14 +3,17 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 export default function SignupForm() {
+  // Fields
   const [email, setEmail] = useState("");
   const [repeatEmail, setRepeatEmail] = useState("");
-  const [repeatEmailError, setRepeatEmailError] = useState<string | null>(null);
   const [password, setPassword] = useState("");
-  const [emailError, setEmailError] = useState<string | null>(null);
   const [emailFieldTouched, setEmailFieldTouched] = useState(false);
-  const [passwordError, setPasswordError] = useState<string | null>(null);
   const [agreedToTerms, setAgreedToTerms] = useState(false);
+
+  // Errors
+  const [emailError, setEmailError] = useState<string | null>(null);
+  const [passwordError, setPasswordError] = useState<string | null>(null);
+  const [repeatEmailError, setRepeatEmailError] = useState<string | null>(null);
   const [agreedToTermsError, setAgreedToTermsError] = useState<string | null>(
     null
   );

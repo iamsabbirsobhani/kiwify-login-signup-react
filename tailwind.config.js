@@ -9,7 +9,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      focus: ['outline-none', 'shadow-outline-blue', 'border-blue-300'],
+    },
   },
   plugins: [],
 }
